@@ -2,3 +2,10 @@
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+
+.active{
+    color: white;
+}
+.myshadow{
+    box-shadow: 0px 10px 0 5px  rgba(0, 0, 0, 0.5);
+}
