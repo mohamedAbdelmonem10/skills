@@ -1,6 +1,6 @@
 import React from "react";
 import img2 from "./../../assets/2.jpeg";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function SignIn() {
   return (
@@ -55,12 +55,12 @@ export default function SignIn() {
                   Remember me
                 </label>
               </div>
-              <a
-                href="#"
+              <Link
+                to="/forgotpassword"
                 className="ms-auto text-sm text-blue-700 hover:underline dark:text-blue-500"
               >
                 Forgot Password?  
-              </a>
+              </Link>
             </div>
             <button
               type="submit"

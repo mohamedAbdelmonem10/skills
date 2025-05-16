@@ -11,6 +11,12 @@ import Profile from "./Components/Profile/Profile";
 import NotFound from "./Components/NotFound/NotFound";
 import Cover from "./Components/Cover/Cover";
 import About from "./Components/About/About";
+import Myprofile from "./Components/Myprofile/Myprofile";
+import Score from "./Components/Score/Score";
+import Settings from "./Components/Settings/Settings";
+import PasswordManger from "./Components/PasswordManger/PasswordManger";
+import DeleteAccount from "./Components/DeleteAccount/DeleteAccount";
+import Forgotpassword from "./Components/Forgotpassword/Forgotpassword";
 
 function App() {
   
@@ -23,7 +29,13 @@ function App() {
       {path: "sign up", element: <SignUp />},
       {path:"sign in", element: <SignIn/>},
       {path: "Search", element: <Search/>},
+      {path: "forgotpassword", element: <Forgotpassword/>},
       {path: "profile", element: <Profile/>},
+      {path: "Myprofile", element: <Myprofile/>},
+      {path: "Score", element: <Score/>},
+      {path: "Settings", element: <Settings/>},
+      {path: "PasswordManger", element: <PasswordManger/>},
+      {path: "DeleteAccount", element: <DeleteAccount/>},
       {path: "*", element: <NotFound />},
     ] },
   ])
