@@ -17,6 +17,7 @@ import Settings from "./Components/Settings/Settings";
 import PasswordManger from "./Components/PasswordManger/PasswordManger";
 import DeleteAccount from "./Components/DeleteAccount/DeleteAccount";
 import Forgotpassword from "./Components/Forgotpassword/Forgotpassword";
+import SecCover from "./Components/SecCover/SecCover";
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
     { path: "/", element: <Layout /> , children: [
       {index: true, element: <Cover /> },
       { path: "home", element: <Home /> },
+      {path: "SecCover", element: <SecCover /> },
       {path:"contact", element:<Contact/>},
       {path: "about", element: <About />},
       {path: "sign up", element: <SignUp />},
