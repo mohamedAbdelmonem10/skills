@@ -2,12 +2,11 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Cover() {
+  const navigate = useNavigate();
 
-    const navigate = useNavigate();
-
-    useEffect(() => {
+  useEffect(() => {
     const timer = setTimeout(() => {
-      navigate('/SecCover'); // الصفحة التانية
+      navigate("/SecCover"); // الصفحة التانية
     }, 2000);
 
     return () => clearTimeout(timer);
